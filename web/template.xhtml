@@ -15,7 +15,7 @@
       <!-- overrides title on tab-->
       <f:facet name="title">
          <h:outputText value="storageSPERT"/>
-         <p:graphicImage value="logotype.png" style="vertical-align: middle; horiz-align: middle"/>
+         <p:graphicImage value="logotype.png" style="vertical-align: middle"/>
       </f:facet>
    </p:tab>
 </p:tabView>
@@ -43,10 +43,12 @@
          <p:menuitem value="Dodaj użytkownika systemu" url="" />
       </p:submenu>
    </p:menu>
+      <p:stack icon="stack.png" expanded="true">
+         <p:menuitem value="Home" icon="home.png" url="#"/>
+      </p:stack>
    </h:form>
    <ui:insert name="content"></ui:insert>
-
-
 </h:body>
+
 </f:view>
 </html>
